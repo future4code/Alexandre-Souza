@@ -1,0 +1,41 @@
+h1 {
+    color: white;
+    font-size: 40pt;
+    padding: 35px;
+    background-color: steelblue;
+  }
+
+p {
+    color: white;
+    font-size: 30pt;
+    padding: 35px;
+    background-color: steelblue;
+    }
+
+h4 {
+    color: blue;
+    font-size: 40pt;
+    padding: 35px;
+    background-color: steelblue;
+}
+
+a {
+  text-decoration: none;
+  background-color: steelblue;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+}
+
+img {
+  display: inline-block;
+  width: 2%;
+  text-align: center;
+  border: none
+}
