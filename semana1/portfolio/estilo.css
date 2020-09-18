@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+    height: 100%;
+}
+
+#cabecalho {
+    background-color: rgb(180, 188, 230);
+    height: 20vh;
+    
+}
+
+#central {
+    background-color: whitesmoke;
+    height: 70vh;
+
+}
+
+#rodape {
+    background-color: blue;
+    height: 20vh;
+}
+
+#foto {
+    /* max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto; */
+}

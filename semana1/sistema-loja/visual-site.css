@@ -92,3 +92,20 @@ h2 {
   color: orangered;
   font-size: 30px;
   }
+
+  #centralfuncionarios {
+    background-color: orange;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+  }
+
+  ul {
+    margin: 10px;
+    list-style: none;
+  }
+
+  li {
+    margin: 10px;
+    list-style: none;
+  }
