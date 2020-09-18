@@ -1,41 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
 h1 {
-    color: white;
-    font-size: 40pt;
-    padding: 35px;
-    background-color: steelblue;
+    color: orangered;
+    font-size: 40px;
+    /* padding: 35px; */
+    /* background-color: steelblue; */
   }
 
 p {
-    color: white;
-    font-size: 30pt;
-    padding: 35px;
-    background-color: steelblue;
+    color: orangered;
+    font-size: 30px;
+    /* padding: 35px; */
+    /* background-color: steelblue; */
     }
 
 h4 {
     color: blue;
-    font-size: 40pt;
-    padding: 35px;
-    background-color: steelblue;
+    font-size: 40px;
+    /* padding: 35px; */
+    /* background-color: steelblue; */
 }
 
 a {
   text-decoration: none;
-  background-color: steelblue;
+  /* background-color: steelblue; */
   color: white;
   padding: 0px;
-  margin: 0px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 400px;
-  height: 40px;
+  margin: 10px;
+  /* display: table-cell; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* width: 400px; */
+  /* height: 40px; */
   font-size: 18px;
 }
 
-img {
+/* img {
   display: inline-block;
   width: 2%;
   text-align: center;
   border: none
+} */
+
+#cabeca {
+  background-color: white;
+  height: 120px;
+  text-align: center;
+  line-height: 60px;
 }
+
+#navega {
+  height: 70px;
+  background-color: orangered;
+  text-align: center;
+  line-height: 35px;
+  padding-top: 25px;
+}
+
+#rodape {
+  height: 170px;
+  background-color: rgb(211, 173, 102);
+  text-align: center;
+  padding: 15px;
+  line-height: 75px;
+  margin-bottom: -10px;
+}
+
+#rodape img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-bottom: 0;
+  }
+
+#central {
+  background-color: orange;
+  height: 350px;
+  text-align: center;
+  line-height: 350px;
+}
+
+h2 {
+  color: orangered;
+  font-size: 30px;
+  }
