@@ -76,6 +76,8 @@ div img {
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    list-style-position: inside;
+    
 }
 
 #container-para-comprar {
@@ -103,6 +105,7 @@ div:last-child {
 table {
     width: 60%;
     margin: auto;
+    text-align: center;
 }
 
 td button {
