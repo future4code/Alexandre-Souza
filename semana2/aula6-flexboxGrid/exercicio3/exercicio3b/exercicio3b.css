@@ -34,3 +34,68 @@ body {
 .purple-background {
     background-color: purple;
 }
+
+#top-container{
+    display: grid;
+    height: 5vh;
+}
+
+.green-background {
+    display: grid;
+    width: 30vw;
+}
+
+.yellow-background {
+    display: grid;
+    width: 70vw;
+}
+
+.pink-background {
+    display: grid;
+    height: 40vh;
+    width: 100vw;
+}
+
+#middle-container {
+    display: grid;
+    height: 20vh;
+}
+
+.blue-background {
+    display: grid;
+    height: 20vh;
+    width: 50vw;
+}
+
+#vertical-middle-container {
+    display: grid;
+    flex-direction: column;
+    
+}
+
+.blank {
+    display: grid;
+    height: 20vh;
+    width: 20vw;
+
+}
+
+.red-background {
+    display: grid;
+    height: 10vh;
+    width: 20vw;
+    wrap: nowrap;
+}
+
+.lightgreen-background {
+    display: grid;
+    height: 10vh;
+    width: 20vw;
+}
+
+.purple-background {
+    display: grid;
+    height: 5vh;
+    width: 100vw;
+
+}
