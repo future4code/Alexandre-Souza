@@ -70,14 +70,12 @@ body {
 #vertical-middle-container {
     display: grid;
     flex-direction: column;
-    
 }
 
 .blank {
     display: grid;
     height: 20vh;
     width: 20vw;
-
 }
 
 .red-background {
