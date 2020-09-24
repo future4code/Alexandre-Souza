@@ -8,18 +8,30 @@ body{
     background-color: orange;
     height: 8vh;
     color: #FFF;
-    text-align: left;
-    padding: 1%;
+    text-align: right;
+    padding: 55px 25px
+}
+
+#search {
+    height: 30px;
+    width: 300px;
+}
+
+#botao {
+    height: 35px;
 }
 
 h1 {
    text-align: left;
 }
 
-
+button {
+    background-color: white;
+    border-radius: 5px;
+}
 
 #principal{
-    height: 75vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
@@ -32,8 +44,7 @@ h1 {
 }
 
 #principal div{
-    border: 1px solid gray;
-    padding: 20px;
+    padding: 30px;
 }
 
 #footer{
@@ -46,4 +57,5 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 0;
 }
