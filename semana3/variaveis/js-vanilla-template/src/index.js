@@ -63,6 +63,9 @@ Resposta: string*/
 console.log (`Olá ${nome}, você tem ${idade} anos`)
 */
 
+
+/*EXERCÍCIO 2*/
+
 /*
 let animal
 let comida
@@ -83,6 +86,9 @@ console.log(`4. Qual sua cantora favorita?  Resposta: ${cantora}`)
 console.log(`5. Qual sua musica favorita?  Resposta: ${musica}`)
 */
 
+
+/*EXERCICIO 3*/
+
 /*
 let foodTopFive = ["pizza", "sushi", "hamburguer", "maionese", "churrasco"]
 console.log(foodTopFive)
@@ -94,8 +100,12 @@ ${foodTopFive[3]}
 ${foodTopFive[4]}`)
 */
 
+
+/*EXERCICIO 4
+
 let questions = ["Você é brasileiro", "Você gosta de cachorro", "Você gosta de alho"]
 let answer = ["true", "false"]
 console.log(questions[0], answer[0])
 console.log(questions[1], answer[0])
 console.log(questions[2], answer[1])
+*/
