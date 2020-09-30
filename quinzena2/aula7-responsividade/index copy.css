@@ -1,0 +1,179 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    /* border: 1px solid black; */
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem
+}
+
+#casa1 {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    flex-wrap: wrap;
+
+    }
+
+#casa2 {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    flex-wrap: wrap;
+    }    
+
+#casa3 {
+    display: flex;
+    height: 20rem;
+    flex-wrap: wrap;
+}
+
+#casa4 {
+    display: flex;
+    height: 10rem;
+    flex-wrap: wrap;
+}
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex;
+    width: 33,3vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    width: 33,3vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    width: 33,3vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 33,3vw;
+    
+
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+
+    #casa1 {
+        display: flex;
+        width: 100%;
+        height: 10rem;
+        }
+    
+    #casa2 {
+        display: flex;
+        width: 100%;
+        height: 10rem;
+        }    
+    
+    #casa3 {
+        display: flex;
+        height: 20rem;
+    }
+    
+    #casa4 {
+        display: flex;
+        height: 10rem;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        margin: 20px;
+        display: flex;
+        width: 66vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        margin: 20px;
+        display: flex; 
+        width: 66vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .green-block {
+        background-color: green;
+        margin: 20px;
+        display: flex; 
+        width: 66vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .black-block {
+        background-color: black;
+        color: white;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    
+    .white-block {
+        background-color: white;
+        margin: 20px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 66vw;
+    }
+}
+
+/* @media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+
+
+
+} */

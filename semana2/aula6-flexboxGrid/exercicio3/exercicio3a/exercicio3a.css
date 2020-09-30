@@ -76,6 +76,7 @@ body {
 
 #vertical-middle-container {
     display: flex;
+    order: 2;
     flex-direction: column;
     
 }
@@ -84,7 +85,7 @@ body {
     display: flex;
     height: 10vh;
     width: 20vw;
-    wrap: nowrap;
+    order: 2;
 }
 
 .lightgreen-background {
