@@ -1,0 +1,274 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    /* border: 1px solid black; */
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem
+}
+
+#casa1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+    }
+
+#casa2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+    }    
+
+#casa3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 18rem;
+}
+
+#casa4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 12rem;
+    /* border: 1px solid black; */
+}
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem;
+
+}
+
+#casa1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    }
+    
+#casa2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+#casa3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+}
+
+#casa4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px; 
+}
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100px;
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100px;
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+}
+
+.black-block {
+    background-color:black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100px;
+}
+
+#blank-fix {
+    width: 600px;
+}
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    /* smartphones */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem;
+}
+
+#casa1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem;
+}
+
+#casa2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem;
+}
+
+#casa3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 15rem;
+}
+
+#casa4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem; 
+}
+
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+} 
+
+
+
+
+
+
+
+
