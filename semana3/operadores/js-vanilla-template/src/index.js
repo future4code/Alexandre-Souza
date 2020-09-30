@@ -96,10 +96,11 @@ console.log(listaDeTarefas)
 */
 
 
-/*
-EXERCICIO 4
+
+/*EXERCICIO 4
 
 let nome = prompt("Insira seu nome")
 let email = prompt("Insira seu e-mail")
-console.log(`O e-mail ${email} foi cadastrado com sucesso. Seja bem-vinda(o) ${nome}`)
+let mensagem = "O e-mail " + email + "foi cadastrado com sucesso. Seja bem-vinda(o) " + nome
+console.log(mensagem)
 */
