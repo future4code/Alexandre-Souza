@@ -136,6 +136,3 @@ const etapa = prompt("Escolha a etapa do jogo: SF indica semi-final; DT indica d
 const categoria = Number(prompt ("Escolha qual opção de categora você deseja: 1, 2, 3 ou 4"))
 const qtdadeTicket = Number(prompt("Quantos ingressos você deseja comprar?"))
 */
-
-let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-console.log(lista)
