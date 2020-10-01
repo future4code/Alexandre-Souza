@@ -243,6 +243,7 @@ while (numero !== numero2) {
 console.log("Você acertou!")
 console.log(`O número de tentativas foi: ${armazena}`)
 */
+//
 
 
 
