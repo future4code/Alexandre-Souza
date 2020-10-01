@@ -115,7 +115,6 @@ if (movieGenre === "fantasia" && ticketValue <= 15) {
 
 /*DESAFIO 1
 
-
 const movieGenre = prompt("Qual gênero de filme você vai assistir?").toLowerCase()
 const ticketValue = Number (prompt("Qual o valor do ingresso?"))
 const snack = prompt("Qual snack você prefere comprar?")
@@ -128,6 +127,15 @@ if (movieGenre === "fantasia" && ticketValue <= 15) {
 */
 
 
+/*DESAFIO 2
 
 
+const nome = prompt("Digite seu nome completo").toLowerCase()
+const tipoJogo = prompt("Escolha o tipo de jogo: IN indica internacional; e DO indica doméstico;").toUpperCase()
+const etapa = prompt("Escolha a etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final").toUpperCase()
+const categoria = Number(prompt ("Escolha qual opção de categora você deseja: 1, 2, 3 ou 4"))
+const qtdadeTicket = Number(prompt("Quantos ingressos você deseja comprar?"))
+*/
 
+let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+console.log(lista)
