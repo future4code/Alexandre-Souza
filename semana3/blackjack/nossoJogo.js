@@ -12,37 +12,30 @@
  */
 
 
- console.log ("Bem-vind@ ao BlackJack!");
+ console.log ("Bem-vindo(a) ao jogo de BlackJack!");
 
- const respostaUsuario = confirm("Quer iniciar uma nova rodada?");
+let jogo = confirm("Quer iniciar uma nova rodada?");
 
- if(respostaUsuario == true) {
+if(jogo) {
+    let carta1Usuario = comprarCarta()
+    let carta2Usuario = comprarCarta()
+    let carta1Pc = comprarCarta()
+    let carta2Pc = comprarCarta()
 
-   const arrayUsuario = [];
-   const arrayPc = [];
+    let pontuacaoUsuario = carta1Usuario.valor + carta2Usuario.valor
+    let pontuacaoPc = carta1Pc.valor + carta2Pc.valor
 
-   for (let i = 0; i < 2; i++) {
-      arrayUsuario.push(comprarCarta());
-      arrayPc.push(comprarCarta());
-   }
+    console.log(`Usuário - cartas: ${carta1Usuario.texto} ${carta2Usuario.texto} - ${pontuacaoUsuario}`);
+    console.log(`Computador - cartas: ${carta1Pc.texto} ${carta2Pc.texto} - ${pontuacaoPc}`);
 
-   let totalUsuario = 0;
-   let totalPc = 0;
-
-
-   console.log(`Usuário - cartas: ${arrayUsuario[0]}.texto} ${arrayUsuario[1].texto} - pontuação ${totalUsuario}`);
-   console.log(`Computador - cartas: ${arrayPc[0].texto} ${arrayPc[1].texto} - pontuação ${totalPc}`);
-
-
-   if(totalUsuario > totalPc) {
+   if(pontuacaoUsuario > pontuacaoPc) {
       console.log("O usuário ganhou!")
-   } else if(totalUsuario < totalPc) {
+   } else if (pontuacaoUsuario < pontuacaoPc) {
       console.log("O computador ganhou!")
-   } else {
+   } else if (pontuacaoUsuario === pontuacaoPc) {
       console.log("Empate!")
    }
 
-
- } else {
-    console.log("O jogo acabou!")
- }
+} else {
+   console.log("O jogo acabou")
+}
