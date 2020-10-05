@@ -63,5 +63,46 @@
 // const resultado = dadosPessoais(nome, idade, cidade, estudante)
 // console.log(resultado)
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+//Exercicio 5
+//a.
 
+// const somaDosParametros = function(x, y) {
+//     const soma = x + y
+//     return soma
+// }
+
+// const resultado = somaDosParametros (999, 1)
+
+// console.log(resultado)
+
+//b.
+
+// let parametros = (one, two) => {
+        
+//     if (one > two) {
+//         one = "sim, sou um booleano bem lindão"
+//     } else { 
+//         one = "não, mas mesmo assim sou um booleano"
+//     }
+
+//     console.log(`RESPOSTA: ${one}`)
+
+// }
+    
+//     const one = 30
+//     const two = 20
+    
+// const resultado = parametros(one, two)
+// console.log(resultado)
+
+//c.
+
+function impressora(a) {
+    for (let i = 0; i <= 10; i++) {
+        console.log(i+"As invenções são, sobretudo, o resultado de um trabalho teimoso.",a)        
+    }
+}
+impressora("SANTOS DUMONT")
+    
