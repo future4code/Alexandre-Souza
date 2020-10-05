@@ -99,10 +99,15 @@
 
 //c.
 
-function impressora(a) {
-    for (let i = 0; i <= 10; i++) {
-        console.log(i+"As invenções são, sobretudo, o resultado de um trabalho teimoso.",a)        
-    }
-}
-impressora("SANTOS DUMONT")
+// function impressora(a) {
+//     for (let i = 0; i <= 10; i++) {
+//         console.log(i+"As invenções são, sobretudo, o resultado de um trabalho teimoso.",a)        
+//     }
+// }
+// impressora("SANTOS DUMONT")
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
     
