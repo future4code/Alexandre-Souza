@@ -8,9 +8,8 @@ function imprimirDespesas(despesas){
     let divDespesas = document.getElementById('despesas')
     divDespesas.innerHTML = '<p><u>Despesas Detalhadas</u></p>'
 
-    // AQUI VEM A IMPLEMENTAÇÃO
-    despesas.forEach((despesa)=>{
-        divDespesas.innerHTML +=`valor: R$${despesa.valor} | tipo: ${despesa.tipo} | descrição: ${despesa.descricao}<br>`
+    despesas.forEach((despesa) => {
+        divDespesas.innerHTML += `<li>valor: R$${despesa.valor} | tipo: ${despesa.tipo} | descrição: ${despesa.descricao}</li>`
     })
 }
 
