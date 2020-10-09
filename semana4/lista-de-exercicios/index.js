@@ -54,7 +54,24 @@
 // e) false && true || true && true && true = true
 
 
-//
+//Exercicio 3
+//O código está errado pois o colega colocou sinal de multiplicação
+//Também será inviável filtrar os números pares com esse código iniciado
+
+// function imprimirNumerosPares(numerosPares) {
+
+// let i = 0
+// while(i < numerosPares) {
+//     if(i % 2 === 0) {
+//         console.log(i)
+//     } else {
+//         numerosPares += 1
+//     }
+
+// i++
+
+// }
+// }
 
 
 
