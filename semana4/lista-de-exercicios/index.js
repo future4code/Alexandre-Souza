@@ -22,12 +22,11 @@
 //Na primeira armazenará números menores que o anterior (1)
 //Na segunda armazenará números maiores (25)
 
-
+//__________________________________________________________________________________________________________________________________________
 
 //Exercícios de lógica de Programação
 
 //Exercício 1
-
 //1 - for
 //2 - for of
 //3 - while
@@ -36,12 +35,11 @@
 //     for(let i = 0; i < listaArray.lenght; i++) {
 //         console.log(listaArray[i])
 //     }
-    
 // }
 
 
-//Exercício 2
 
+//Exercício 2
 // Boolean1 = true
 // Boolean2 = false
 // Boolean3 = true
@@ -52,6 +50,7 @@
 // c) false || true && false || true = true
 // d) true && true || false && true = true
 // e) false && true || true && true && true = true
+
 
 
 //Exercicio 3
@@ -75,48 +74,57 @@
 
 
 
+// Exercicio 4
 
+// const triangle = (a, b, c) => {
+    
+//     if(a === b && b === c && c === a) {
+//         console.log('É um triangulo Equilátero')
+//     } else if (a !== b && b !== c && c !== a) {
+//         console.log('É um triangulo Escaleno')
+//     } else if (a === b && a !== c) {
+//         console.log ("É um triangulo Isóceles")
+//     }
 
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const triangleEqui = triangle(5, 5, 5)
+// const triangleIso = triangle(5, 5, 4)
+// const triangleEsc = triangle(3, 4, 5)
 
 
 
 //Exercício 5
 
+const numero1 = Number(prompt('Digite um número: '))
+const numero2 = Number(prompt('Digite outro número: '))
 
-// const numero1 = Number(prompt('Digite um número: '))
-// const numero2 = Number(prompt('Digite outro número: '))
 
+const verificaMaiorNumero = (a, b) => { 
+    if ( a > b ) {
+         console.log(`O maior é ${a}`)
+    } else {
+         console.log(`O menor é ${a}`)
+    }
 
-// const verificaMaiorNumero = (a, b) => {
-//     if ( a > b ) {
-//          console.log('O maior é: ' , a)
-//          console.log(b + ' não é divisível por ' + a)
-//          console.log(a + ' é divisível por ' + b)
-//          console.log('A diferença entre eles é',  a - b)
-//     }else if ( b > a ) {
-//          console.log('O maior é: ', b)
-//          console.log(a + ' não é divisível por ' + b)
-//          console.log(b + ' é divisível por' + a)
-//          console.log('A diferença entre eles é ' , b - a)
-//     } else {
-//         alert('Os dois números são iguais!')
-//     }
+    if( a % b === 0) {
+        console.log(`${a} é divisível por ${b}`)
+    } else {
+        console.log(`${a} não é divisível por ${b}`)
+    }
 
-// }
+    if( b % a === 0) {
+        console.log(`${b} é divisível por ${a}`)
+    } else {
+        console.log(`${b} não é divisível por ${a}`)
+    }
 
-// verificaMaiorNumero(numero1, numero2)
+    if (numero1 !== numero2) {
+        console.log("A diferença entre eles é, a - b")
+    } else {
+        console.log("A diferença entre eles é numero2 - numero1")
+    }
+
+}
+
+verificaMaiorNumero(numero1, numero2)
