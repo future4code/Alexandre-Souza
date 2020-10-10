@@ -190,5 +190,14 @@
 //__________________________________________________________________________________________________________________________________________
 
 
+//Exercício 1
+
+//Objetos são estruturas de sintaxe que nos ajuda a deixar tudo mais organizado.
+//Ele tem como caracteristica deixar tudo de forma mais intuitiva, como no mundo real
+//Como se variaveis de valores tipo string, number e boolean fossem gavetas.
+//Os objetos seriam como uma gavetona com etiquetas de onde colocar cada coisa, separando detalhadamente e organizadamente.
+//Podemos usar para guardar informações específicas como por exemplo dados cadastrais de uma pessoa no site (nome, idade, sexo, etc..)
+//Já o array deixa a forma de organizar diferente, como por exemplo os índices, neste caso poderíamos utilizr funções para trabalhar nelas.
+//Array lembra listas.
 
 
