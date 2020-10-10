@@ -119,10 +119,10 @@ const verificaMaiorNumero = (a, b) => {
         console.log(`${b} não é divisível por ${a}`)
     }
 
-    if (numero1 !== numero2) {
-        console.log("A diferença entre eles é, a - b")
-    } else {
-        console.log("A diferença entre eles é numero2 - numero1")
+    if ( a > b) {
+        console.log ("A diferença entre eles é", a - b)
+    }else {
+        console.log ("A diferença entre eles é", b - a)
     }
 
 }
