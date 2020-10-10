@@ -24,6 +24,7 @@
 
 //__________________________________________________________________________________________________________________________________________
 
+
 //Exercícios de lógica de Programação
 
 //Exercício 1
@@ -96,35 +97,82 @@
 
 //Exercício 5
 
-const numero1 = Number(prompt('Digite um número: '))
-const numero2 = Number(prompt('Digite outro número: '))
+// const numero1 = Number(prompt('Digite um número: '))
+// const numero2 = Number(prompt('Digite outro número: '))
 
 
-const verificaMaiorNumero = (a, b) => { 
-    if ( a > b ) {
-         console.log(`O maior é ${a}`)
-    } else {
-         console.log(`O menor é ${a}`)
-    }
+// const verificaMaiorNumero = (a, b) => { 
+//     if ( a > b ) {
+//          console.log(`O maior é ${a}`)
+//     } else {
+//          console.log(`O menor é ${a}`)
+//     }
 
-    if( a % b === 0) {
-        console.log(`${a} é divisível por ${b}`)
-    } else {
-        console.log(`${a} não é divisível por ${b}`)
-    }
+//     if( a % b === 0) {
+//         console.log(`${a} é divisível por ${b}`)
+//     } else {
+//         console.log(`${a} não é divisível por ${b}`)
+//     }
 
-    if( b % a === 0) {
-        console.log(`${b} é divisível por ${a}`)
-    } else {
-        console.log(`${b} não é divisível por ${a}`)
-    }
+//     if( b % a === 0) {
+//         console.log(`${b} é divisível por ${a}`)
+//     } else {
+//         console.log(`${b} não é divisível por ${a}`)
+//     }
 
-    if ( a > b) {
-        console.log ("A diferença entre eles é", a - b)
-    }else {
-        console.log ("A diferença entre eles é", b - a)
-    }
+//     if ( a > b) {
+//         console.log ("A diferença entre eles é", a - b)
+//     }else {
+//         console.log ("A diferença entre eles é", b - a)
+//     }
 
-}
+// }
 
-verificaMaiorNumero(numero1, numero2)
+// verificaMaiorNumero(numero1, numero2)
+
+
+//__________________________________________________________________________________________________________________________________________
+
+
+//Exercícios de Funções
+
+//Exercício 1
+
+// function maiorMenor(array) {
+//     let maiorNumero = 0
+//     let segundoMaior = 0
+//     let menorNumero = 0
+//     let segundoMenor = 0
+    
+//     for(let i = 0; i < array.length; i++) {
+//         if(maiorNumero < array[i]) {
+//             maiorNumero = array[i]  
+//         }
+//     }
+    
+//     for(let i = 0; i < array.length; i++) {     
+//         if(maiorNumero !== array[i] && segundoMaior < array[i]) {
+//             segundoMaior = array[i]
+//         }
+//     }
+    
+//     menorNumero = maiorNumero
+//     segundoMenor = segundoMaior
+//     for(let i = 0; i < array.length; i++) {
+//         if (menorNumero > array[i]) {
+//             menorNumero = array[i]
+//         }
+//     }
+    
+//     for(let i = 0; i < array.length; i++) { 
+//         if(menorNumero !== array[i] && segundoMenor > array[i]) {
+//             segundoMenor = array[i]
+//         }
+//     }
+    
+//     console.log(segundoMaior)
+//     console.log(segundoMenor)
+// }
+// maiorMenor([10000, 2, 571, 9999, 1, 92, 31 , 1475]) 
+// maiorMenor([10000, 2, 571, 9999, 1, 92, 31 , 1475])
+
