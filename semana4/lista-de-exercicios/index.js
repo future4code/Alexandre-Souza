@@ -201,3 +201,16 @@
 //Array lembra listas.
 
 
+//Exercício 2
+
+function criaRetangulo (lado1, lado2) {
+    let objeto = {
+    largura: 'lado1',
+    altura: 'lado2',
+    perímetro: '(2 * (lado1 + lado2))',
+    área: '(lado1 * lado2)'
+}
+
+return objeto
+
+}
