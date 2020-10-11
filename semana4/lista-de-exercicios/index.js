@@ -1,9 +1,10 @@
 //Exercícios de Interpretação de códigos
-
 //Exercício 1
+
 //Fará a multiplicação com o valor da cotação que o usuário inserir no prompt. Irá mostrar o valor da multiplicação.
 
 //Exercício 2
+
 //O programa irá calcular o investimento que recebe parâmetros de tipo de investimento e de valor de investimento.
 //A tratativa será rodada em Switch case.
 //Irá rodar o parâmetro que se for diferente das opções marcadas, irá emitir um alert.
@@ -12,11 +13,13 @@
 //Irá imprimir o retorn de toda função no console navegador.
 
 //Exercício 3
+
 //Ele vai percorrer desde o i=0 até o último e verificar a paridade de todos, se for par
 //vai acrescentar esses números dentro do array1, se não for, vai para o array2.
 //depois irá imprimir a quantidade de cada instrução de console.log respectivamente: 14, pares e não pares.
 
 //Exercício 4
+
 //Programa vai verificar a quantidade máxima e mínima de elementos dentro de números.
 //Se trata de um loop para verificação desses números.
 //Na primeira armazenará números menores que o anterior (1)
@@ -26,8 +29,8 @@
 
 
 //Exercícios de lógica de Programação
-
 //Exercício 1
+
 //1 - for
 //2 - for of
 //3 - while
@@ -41,6 +44,7 @@
 
 
 //Exercício 2
+
 // Boolean1 = true
 // Boolean2 = false
 // Boolean3 = true
@@ -55,6 +59,7 @@
 
 
 //Exercicio 3
+
 //O código está errado pois o colega colocou sinal de multiplicação
 //Também será inviável filtrar os números pares com esse código iniciado
 
@@ -135,7 +140,6 @@
 
 
 //Exercícios de Funções
-
 //Exercício 1
 
 // function maiorMenor(array) {
@@ -189,6 +193,7 @@
 
 //__________________________________________________________________________________________________________________________________________
 
+//Exercícios de Objetos
 
 //Exercício 1
 
@@ -243,3 +248,22 @@
 // }
 
 // console.log(anonimizarPessoa.nome)
+
+
+//__________________________________________________________________________________________________________________________________________
+
+
+//Exercícios de Funções de array
+
+const pessoas = [
+    {nome: "Pedro", idade: 20},
+    {nome: "João", idade: 20},
+    {nome: "Paula", idade: 12},
+    {nome: "Arthur", idade: 89}
+]
+
+const soPessoasAcima20 = pessoas.filter((pessoas) => {
+    if(pessoas.idade >= 20) {
+        return pessoas
+    }
+})
