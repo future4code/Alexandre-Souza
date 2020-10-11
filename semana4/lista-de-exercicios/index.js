@@ -218,11 +218,28 @@
 
 //Exercício 3
 
-    let filmeFavorito = {
-        título: "Jurassic Park",
-        ano: "1993",
-        diretor: "Steven Spielberg",
-        elenco: ["Jeff Goldblum", "Samuel L Jackson"]
-        }
+    // let filmeFavorito = {
+    //     título: "Jurassic Park",
+    //     ano: "1993",
+    //     diretor: "Steven Spielberg",
+    //     elenco: ["Jeff Goldblum", "Samuel L Jackson"]
+    //     }
 
-    console.log(`Venha assistir ao filme ${filmeFavorito.título}, de ano ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.elenco[0]} e ${filmeFavorito.elenco[1]}`)
+    // console.log(`Venha assistir ao filme ${filmeFavorito.título}, de ano ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.elenco[0]} e ${filmeFavorito.elenco[1]}`)
+
+
+//Exercício 4
+
+// const cadastroPessoal = {
+//     nome: "Alberto Santos Dumont",
+//     idade: "59",
+//     email: "dumont@labenu.com.br",
+//     endereço: "Palmira - MG"
+// }
+
+// let anonimizarPessoa = {
+//     ... cadastroPessoal,
+//     nome: "ANÔNIMO"
+// }
+
+// console.log(anonimizarPessoa.nome)
