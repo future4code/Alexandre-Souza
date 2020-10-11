@@ -203,14 +203,26 @@
 
 //Exercício 2
 
-function criaRetangulo (lado1, lado2) {
-    let objeto = {
-    largura: 'lado1',
-    altura: 'lado2',
-    perímetro: '(2 * (lado1 + lado2))',
-    área: '(lado1 * lado2)'
-}
+// function criaRetangulo (lado1, lado2) {
+//     let gaveta = {
+//     largura: 'lado1',
+//     altura: 'lado2',
+//     perímetro: '(2 * (lado1 + lado2))',
+//     área: '(lado1 * lado2)'
+// }
 
-return objeto
+// return gaveta
 
-}
+// } 
+
+
+//Exercício 3
+
+    let filmeFavorito = {
+        título: "Jurassic Park",
+        ano: "1993",
+        diretor: "Steven Spielberg",
+        elenco: ["Jeff Goldblum", "Samuel L Jackson"]
+        }
+
+    console.log(`Venha assistir ao filme ${filmeFavorito.título}, de ano ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.elenco[0]} e ${filmeFavorito.elenco[1]}`)
