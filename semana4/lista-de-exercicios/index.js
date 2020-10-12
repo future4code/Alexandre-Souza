@@ -255,15 +255,75 @@
 
 //Exercícios de Funções de array
 
-const pessoas = [
-    {nome: "Pedro", idade: 20},
-    {nome: "João", idade: 20},
-    {nome: "Paula", idade: 12},
-    {nome: "Arthur", idade: 89}
-]
+//Exercício 1
+//a
 
-const soPessoasAcima20 = pessoas.filter((pessoas) => {
-    if(pessoas.idade >= 20) {
-        return pessoas
-    }
-})
+// const pessoas = [
+//     {nome: "Pedro", idade: 20},
+//     {nome: "João", idade: 20},
+//     {nome: "Paula", idade: 12},
+//     {nome: "Arthur", idade: 89}
+// ]
+
+// const soPessoasAcimaVinte = pessoas.filter((pessoas) => {
+//     if(pessoas.idade >= 20) {
+//         return pessoas
+//     }
+// })
+
+//b
+
+// constsoPessoasAbaixoVinte = pessoas.filter((pessoas) => {
+//     if(pessoas.idade < 20) {
+//         return pessoas
+//     }
+
+// })
+
+
+//Exercício 2
+
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+//a
+
+// const multiplicadosPorDois = (array) => {
+//     let novoArray = []
+//     array.forEach((numero) => {
+//         novoArray.push(numero*2)
+//     })
+//     return novoArray
+// }
+
+// const novoArray = multiplicadosPorDois(array)
+// console.log(novoArray)
+
+//b
+
+// const numerosMultiplicadosPorTresEmStrings = (array) => {
+//     let novoArray = []
+//     array.forEach((numero) => {
+//     let numeroString = numero * 3
+//     novoArray.push(numeroString.toString())
+//     })
+//     return novoArray
+// }
+
+//c
+
+// const arrayStringParEimpar = (array) => {
+//     let novoArray = []
+//     array.forEach((numero) => {
+        
+//         if(numero % 2 === 0) {
+//             novoArray.push(`${numero} é par`)
+//         } else {
+//             novoArray.push(`${numero} é ímpar`)
+//         }
+//         return novoArray
+//     })
+// }
+
+// const novoArray = arrayStringParEimpar(array)
+// console.log(novoArray)
