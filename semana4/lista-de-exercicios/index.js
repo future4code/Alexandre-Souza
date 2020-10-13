@@ -327,3 +327,27 @@
 
 // const novoArray = arrayStringParEimpar(array)
 // console.log(novoArray)
+
+
+//Exercício 3
+
+//a
+
+const filaMontanhaRussa = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+const acessoCatracaMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
+    return filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60
+})
+
+//b
+
+const pessoasBarradasMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
+    return !(filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60)
+})
