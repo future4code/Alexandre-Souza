@@ -333,21 +333,54 @@
 
 //a
 
-const filaMontanhaRussa = [
-	{ nome: "Paula", idade: 12, altura: 1.8},
-	{ nome: "João", idade: 20, altura: 1.3},
-	{ nome: "Pedro", idade: 15, altura: 1.9},
-	{ nome: "Luciano", idade: 22, altura: 1.8},
-	{ nome: "Artur", idade: 10, altura: 1.2},
-	{ nome: "Soter", idade: 70, altura: 1.9}
+// const filaMontanhaRussa = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+
+// const acessoCatracaMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
+//     return filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60
+// })
+
+// //b
+
+// const pessoasBarradasMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
+//     return !(filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60)
+// })
+
+
+//Exercício 4
+
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
 ]
 
-const acessoCatracaMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
-    return filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60
-})
+const consultasCanceladas = consultas.map((consultas) => {
+    let avisar
+    let lembrar
 
-//b
+    if(consultas.genero === "masculino") {
+        avisar = "Sr."
+        lembrar = "lembrá-lo"
+        lembrar = "lembrá-la"
 
-const pessoasBarradasMontanhaRussa = filaMontanhaRussa.filter((filaMontanhaRussa) => {
-    return !(filaMontanhaRussa.altura >= 1.5 && filaMontanhaRussa.idade > 14 && filaMontanhaRussa.idade <60)
+    else {
+        avisar = "Sra."
+    }
+
+    if(consultas.cancelada) {
+        return `Olá, ${avisar} ${consultas.nome}. Estamos enviando esta mensagem para ${lembrar} da sua consulta no dia ${consultas.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail `
+    
+    } else if(!consultas.cancelada) {
+        return `Olá, ${ saudar } ${ consultas.nome  }. Infelizmente, sua consulta marcada
+        para o dia ${ consultas.dataDaConsulta } foi cancelada. Se quiser, pode entrar em 
+        contato conosco para remarcá-la`
+    }
 })
