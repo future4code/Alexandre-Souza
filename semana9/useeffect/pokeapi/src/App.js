@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import axios from "axios";
-import PokeCard from './components/PokeCard'
+import PokeCard from './components/PokeCard/PokeCard'
 function App () {  
   const [pokeList,setPokeList] = useState([])
   const [pokeName,setPokeName] = useState('')
