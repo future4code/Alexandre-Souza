@@ -8,7 +8,7 @@ import ListTripsPage from '../components/ListTripsPage'
 import LoginPage from '../components/LoginPage'
 import TripDetailsPage from '../components/TripDetailsPage'
 
-function Router (){
+export default function Router () {
     return (
     <BrowserRouter>
         <Switch>
