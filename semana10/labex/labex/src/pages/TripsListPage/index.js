@@ -4,7 +4,7 @@ import { Button, List, ListItem, ListItemText, ListItemLink } from '@material-ui
 import { Link } from 'react-router-dom'
 import { TripsListPageContainer } from './styles'
 import { useTripsList } from '../../hooks/useTripsList'
-import { useProtectedPage } from '../../hooks/useProtectedPage'
+import { useProtectedPage } from '../../hooks/useProtectedgit Page'
 
 const TripsListPage = () => {
   const trips = useTripsList()
