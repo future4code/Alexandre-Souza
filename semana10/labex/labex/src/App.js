@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ApplicationPage from "./pages/ApplicationPage";
+import CreateTripPage from "./pages/CreateTripPage";
+import TripDetailPage from "./pages/TripDetailPage";
+import TripsListPage from "./pages/TripsListPage";
+import LoginPage from "./pages/LoginPage";
+import styled from "styled-components";
+import { CssBaseline } from "@material-ui/core";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+import DateFnsUtils from '@date-io/date-fns';
 
-function App() {
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <MuiPickersUtilsProvider utils={DateFnsUtils}>
+
+      <CssBaseline/>
+      <AppContainer>
+        <Switch>
+          <Route path="/login">
+            <LoginPage/>
+          </Route>
+          <Route path="/viagens/detalhe/:tripId">
+            <TripDetailPage/>
+          </Route>
+          <Route path="/viagens/criar">
+            <CreateTripPage/>
+          </Route>
+          <Route path="/viagens">
+            <TripsListPage/>
+          </Route>
+          <Route path="/inscricao">
+            <ApplicationPage/>
+          </Route>
+          <Route path="/">
+            <HomePage/>
+          </Route>
+        </Switch>
+      </AppContainer>
+      </MuiPickersUtilsProvider>
+
+    </Router>
   );
 }
 
-export default App;
+export default App
