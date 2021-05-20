@@ -27,11 +27,32 @@
 // console.log(`Olá! ${nome}, você tem ${idade} anos.`)
 
 //2.
-let pergunta1 = prompt("Você escovou os dentes hoje?")
-let pergunta2 = prompt("Você tomou café hoje?")
-let pergunta3 = prompt("Você foi trabalhar hoje?")
+// let pergunta1 = prompt("Você escovou os dentes hoje?")
+// let pergunta2 = prompt("Você tomou café hoje?")
+// let pergunta3 = prompt("Você foi trabalhar hoje?")
 
-console.log(pergunta1)
-console.log(pergunta2)
-console.log(pergunta3)
+// console.log(pergunta1)
+// console.log(pergunta2)
+// console.log(pergunta3)
 
+// 3.
+// let a = 10
+// let b = 25
+// let c = a
+
+// a = b
+// b = c
+
+// console.log(`O novo valor de a é, ${a}`)
+// console.log(`O novo valor de b é, ${b}`)
+
+//Desafio
+
+let numero1 = prompt("Escreva um número")
+let numero2 = prompt("Escolha mais um número")
+
+let resultado1 = Number(numero1 + numero2)
+let resultado2 = (numero1 * numero2)
+
+console.log(`O ${numero1} somado ao ${numero2} resulta em ${resultado1} `)
+console.log(`O ${numero1} multiplicado ao ${numero2} resulta em ${resultado2}`)
