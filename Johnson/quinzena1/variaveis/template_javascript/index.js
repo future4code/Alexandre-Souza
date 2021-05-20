@@ -17,8 +17,12 @@
 
 //Exercícios de escrita de código
 
-let nome = prompt("Qual o seu nome?") 
-let idade = Number(prompt("Qual a sua idade?"))
+//1.
+// let nome = prompt("Qual o seu nome?")
+// let idade = Number(prompt("Qual a sua idade?"))
 
-console.log(typeof nome)
-console.log(typeof idade)
+// console.log(typeof nome) /*imprimiu tipo string*/
+// console.log(typeof idade) /*imprimiu tipo number*/
+
+// console.log(`Olá! ${nome}, você tem ${idade} anos.`)
+
