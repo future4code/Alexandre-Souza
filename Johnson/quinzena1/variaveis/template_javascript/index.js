@@ -26,3 +26,12 @@
 
 // console.log(`Olá! ${nome}, você tem ${idade} anos.`)
 
+//2.
+let pergunta1 = prompt("Você escovou os dentes hoje?")
+let pergunta2 = prompt("Você tomou café hoje?")
+let pergunta3 = prompt("Você foi trabalhar hoje?")
+
+console.log(pergunta1)
+console.log(pergunta2)
+console.log(pergunta3)
+
