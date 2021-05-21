@@ -48,11 +48,11 @@
 
 //Desafio
 
-let numero1 = prompt("Escreva um número")
-let numero2 = prompt("Escolha mais um número")
+let numero1 = Number(prompt("Escreva um número"))
+let numero2 = Number(prompt("Escolha mais um número"))
 
-let resultado1 = Number(numero1 + numero2)
-let resultado2 = (numero1 * numero2)
+let resultado1 = numero1 + numero2
+let resultado2 = numero1 * numero2
 
 console.log(`O ${numero1} somado ao ${numero2} resulta em ${resultado1} `)
 console.log(`O ${numero1} multiplicado ao ${numero2} resulta em ${resultado2}`)
