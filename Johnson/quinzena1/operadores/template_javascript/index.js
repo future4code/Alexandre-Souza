@@ -42,23 +42,23 @@
 // const idadeEmAnos = Number(prompt("Quantos anos de idade você tem?"));
 // console.log("A sua idade em anos é:", idadeEmAnos);
 
-// const idadeEmMeses = Number(prompt("Quantos meses de idade você tem?"));
-// console.log("A sua idade em meses é", idadeEmMeses);
+// const idadeEmMeses = Number("Quantos meses de idade você tem?");
+// console.log("A sua idade em meses é", idadeEmAnos * 12);
 
-// const idadeEmDias = Number(prompt("Quantos dias de idade você tem?"));
-// console.log("A sua idade em dias é:", idadeEmDias);
+// const idadeEmDias = Number("Quantos dias de idade você tem?");
+// console.log("A sua idade em dias é:", idadeEmAnos * 365);
 
-// const idadeEmHoras = Number(prompt("Quantas horas de idade você tem?"));
-// console.log("A sua idade em horas é:", idadeEmHoras);
+// const idadeEmHoras = Number("Quantas horas de idade você tem?");
+// console.log("A sua idade em horas é:", idadeEmAnos * 8760);
 
 //4.
-const numeroA = Number(prompt("Digite um número"));
-const numeroB = Number(prompt("Digite mais um número"));
-const numeroADivisivel = numeroA % 2;
-const numeroBDivisivel = numeroB % 2;
+// const numeroA = Number(prompt("Digite um número"));
+// const numeroB = Number(prompt("Digite mais um número"));
+// const numeroADivisivel = numeroA % numeroB === 0;
+// const numeroBDivisivel = numeroB % numeroA === 0;
 
 
-console.log("O primeiro número é maior que o segundo?", numeroA > numeroB);
-console.log("O primeiro número é igual ao segundo?", numeroA === numeroB);
-console.log("O primeiro número é divisível pelo segundo?", numeroA === 0);
-console.log("O segundo número é divisível pelo primeiro?", numeroB === 0);
+// console.log("O primeiro número é maior que o segundo?", numeroA > numeroB);
+// console.log("O primeiro número é igual ao segundo?", numeroA === numeroB);
+// console.log("O primeiro número é divisível pelo segundo?", numeroADivisivel);
+// console.log("O segundo número é divisível pelo primeiro?", numeroBDivisivel);
