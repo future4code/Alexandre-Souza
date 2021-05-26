@@ -50,12 +50,18 @@ console.log(resultadoIMC);
 
 // Exercício 4
 function imprimeInformacoesUsuario() {
-  // escreva seu código aqui
+  const nomeUsuario = prompt("Qual é o seu nome?");
+  const idadeUsuario = prompt("Qual a sua idade?");
+  const emailUsuario = prompt("Qual o seu e-mail?");
+
+console.log(`Meu nome é ${nomeUsuario}, tenho ${idadeUsuario} anos, e o meu email é ${emailUsuario}.`);
 }
 
 // Exercício 5
 function imprimeTresCoresFavoritas() {
-  // escreva seu código aqui
+  const cores = prompt('Qual suas 3 cores preferidas?');
+
+console.log(cores);
 }
 
 // Exercício 6
