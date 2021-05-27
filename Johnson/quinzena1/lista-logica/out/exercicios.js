@@ -59,19 +59,23 @@ console.log(`Meu nome é ${nomeUsuario}, tenho ${idadeUsuario} anos, e o meu ema
 
 // Exercício 5
 function imprimeTresCoresFavoritas() {
-  const cores = prompt('Qual suas 3 cores preferidas?');
+  const cor1 = prompt("Qual a sua primeira cor favorita?");
+  const cor2 = prompt("Qual a sua segunda cor favorita?");
+  const cor3 = prompt("Qual a sua terceira cor favorita?");
+  
+  const arrayCores = [cor1, cor2, cor3];
 
-console.log(cores);
+console.log(arrayCores); 
 }
-
 // Exercício 6
 function retornaStringEmMaiuscula() {
-  // escreva seu código aqui
+
 }
 
 // Exercício 7
 function calculaIngressosEspetaculo() {
-  // escreva seu código aqui
+
+
 }
 
 // Exercício 8
@@ -81,8 +85,12 @@ function checaStringsMesmoTamanho() {
 
 // Exercício 9
 function checaIgualdadeDesconsiderandoCase() {
-  // escreva seu código aqui
-}
+  const frase1 = prompt("Insira uma frase");
+  const frase2 = prompt("Insira uma frase");
+
+  const saoIguais = frase1.toLocaleLowerCase() === frase2.toLocaleLowerCase
+
+console.log("saoguais", saoIguais);
 
 // Exercício 10
 function checaRenovacaoRG() {
