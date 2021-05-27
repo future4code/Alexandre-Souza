@@ -69,7 +69,10 @@ console.log(arrayCores);
 }
 // Exercício 6
 function retornaStringEmMaiuscula() {
+  const mensagemUsuario = prompt("Digite uma saudação");
+  const fraseMaiuscula = mensagemUsuario.toLowerCase()
 
+console.log(fraseMaiuscula);
 }
 
 // Exercício 7
@@ -85,13 +88,8 @@ function checaStringsMesmoTamanho() {
 
 // Exercício 9
 function checaIgualdadeDesconsiderandoCase() {
-  const frase1 = prompt("Insira uma frase");
-  const frase2 = prompt("Insira uma frase");
 
-  const saoIguais = frase1.toLocaleLowerCase() === frase2.toLocaleLowerCase
-
-console.log("saoguais", saoIguais);
-
+}
 // Exercício 10
 function checaRenovacaoRG() {
   // escreva seu código aqui
