@@ -69,8 +69,8 @@ console.log(arrayCores);
 }
 // Exercício 6
 function retornaStringEmMaiuscula() {
-  const mensagemUsuario = prompt("Digite uma saudação");
-  const fraseMaiuscula = mensagemUsuario.toLowerCase()
+  const saudacao = prompt("Digite uma saudação");
+  const fraseMaiuscula = saudacao.toUpperCase()
 
 console.log(fraseMaiuscula);
 }
