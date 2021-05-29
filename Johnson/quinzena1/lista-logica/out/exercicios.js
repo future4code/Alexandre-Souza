@@ -77,7 +77,12 @@ console.log(fraseMaiuscula);
 
 // Exercício 7
 function calculaIngressosEspetaculo() {
+  let custoEspetaculo = prompt("Qual o custo de um espetáculo teatral?");
+  let valorIngresso = prompt("Qual o valor do ingresso?");
+  
 
+console.log("Custo do Espetáculo:" , custoEspetaculo);
+console.log("Valor de cada ingresso:" , valorIngresso);
 
 }
 
