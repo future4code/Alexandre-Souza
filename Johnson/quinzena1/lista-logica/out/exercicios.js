@@ -77,27 +77,41 @@ console.log(fraseMaiuscula);
 
 // Exercício 7
 function calculaIngressosEspetaculo() {
-  let custoEspetaculo = prompt("Qual o custo de um espetáculo teatral?");
-  let valorIngresso = prompt("Qual o valor do ingresso?");
+  const custoEspetaculo = prompt("Qual o custo de um espetáculo teatral?");
+  const valorIngresso = prompt("Qual o valor do ingresso?");
   
 
-console.log("Custo do Espetáculo:" , custoEspetaculo);
-console.log("Valor de cada ingresso:" , valorIngresso);
+console.log(custoEspetaculo / valorIngresso);
 
 }
 
 // Exercício 8
 function checaStringsMesmoTamanho() {
-  // escreva seu código aqui
+  const mensagem1 = prompt("Escolha um animal");
+  const mensagem2 = prompt("Escolha um País");
+  
+console.log(mensagem1.length === mensagem2.length);
 }
 
 // Exercício 9
 function checaIgualdadeDesconsiderandoCase() {
+  const string1 = prompt("Escolha uma cor");
+  const string2 = prompt("Escolha outra cor");
 
+const igualdade = string1.toUpperCase() === string2.toUpperCase();
+
+console.log(igualdade);
 }
 // Exercício 10
 function checaRenovacaoRG() {
-  // escreva seu código aqui
+  const anoAtual = Number(prompt("Digite o ano atual?"));
+  const anoNasc = Number(prompt("Digite seu ano de nascimento"));
+  const anoRg = Number(prompt("Digite seu RG"));
+
+  const idade = anoAtual - anoNasc;
+  const emissao = anoAtual - anoRg;
+
+  console.log((idade <= 20 && emissao >= 5) || (idade > 20 && idade <= 50 && emissao >= 10) || (idade > 50 && emissao >= 15));
 }
 
 // Exercício 11
