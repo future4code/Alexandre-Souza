@@ -6,7 +6,7 @@ function soma() {
   const num1 = prompt('Digite o primeiro número')
   const num2 = prompt('Digite o segundo número')
 
-  console.log(Number(num1) + Number(num2))
+console.log(Number(num1) + Number(num2))
 }
 
 // Exercício 0B
@@ -14,7 +14,7 @@ function imprimeMensagem() {
   // escreva seu código aqui
   const mensagem = prompt('Digite sua mensagem')
 
-  console.log(mensagem)
+console.log(mensagem)
 }
 
 // ---------------------------------------------------
@@ -111,17 +111,22 @@ function checaRenovacaoRG() {
   const idade = anoAtual - anoNasc;
   const emissao = anoAtual - anoRg;
 
-  console.log((idade <= 20 && emissao >= 5) || (idade > 20 && idade <= 50 && emissao >= 10) || (idade > 50 && emissao >= 15));
+console.log((idade <= 20 && emissao >= 5) || (idade > 20 && idade <= 50 && emissao >= 10) || (idade > 50 && emissao >= 15));
 }
 
 // Exercício 11
 function checaAnoBissexto() {
   const ano = Number(prompt("Digite um ano"));
-  console.log((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 != 0));
+
+console.log((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 != 0));
 
 }
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
-  // escreva seu código aqui
+  const idade = prompt("É maior de 18 anos? :")
+  const escolaridade = prompt("Você possui ensino médio? :")
+  const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso? :")
+
+console.log(idade == "sim" && escolaridade == "sim" && disponibilidade == "sim")
 }
