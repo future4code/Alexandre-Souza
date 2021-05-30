@@ -116,7 +116,9 @@ function checaRenovacaoRG() {
 
 // Exercício 11
 function checaAnoBissexto() {
-  // escreva seu código aqui
+  const ano = Number(prompt("Digite um ano"));
+  console.log((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 != 0));
+
 }
 
 // Exercício 12
