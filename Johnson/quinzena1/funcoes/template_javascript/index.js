@@ -14,5 +14,20 @@
 //b.As saídas serão: true, true e true.
 
 
+//Exercícios de escrita de código
+//1.
+//a.
 
+// function imprimirApresentação() {
+//     console.log("Eu sou o Alê, tenho 35 anos, moro no Paraná e sou estudante da Labenu");
+// }
+
+// imprimirApresentação();
+
+//b.
+// function apresentaPessoa(nome, idade, cidade, profissão) {
+//    const pessoa = "Meu nome é " + nome + " tenho " + idade + " anos e moro em " + cidade + " e sou " + profissão
+//    console.log(pessoa)
+// }
+// console.log(apresentaPessoa("Beyonce", 39, "Houston", "Cantora"))
 
