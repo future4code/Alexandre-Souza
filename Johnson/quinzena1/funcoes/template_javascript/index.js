@@ -7,5 +7,12 @@
 
 //b. Dá erro se tirar o console.log
 
+//2.
+
+//a. É uma função que pede ao usuário um texto, tem outra função que guarda esse texto e retorna o texto com minúsculas, verifica com includes se tem uma certa palavra mostrando em booleanos.
+
+//b.As saídas serão: true, true e true.
+
+
 
 
