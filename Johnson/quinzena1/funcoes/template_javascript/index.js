@@ -43,9 +43,17 @@
 // console.log(verificarNumeros(200, 300));
 
 //b.
-const verificarMaior = (numero1, numero2) => {
-    const medidor = numero1 <= numero2
+// const verificarMaior = (numero1, numero2) => {
+//     const medidor = numero1 <= numero2
+//     return medidor
+// }
+
+// console.log(verificarMaior(200, 300));
+
+//c.
+const verificarParidade = (numeroX) => {
+    const medidor = numeroX % 2 == 0
     return medidor
 }
 
-console.log(verificarMaior(200, 300));
+console.log(verificarParidade(201));
