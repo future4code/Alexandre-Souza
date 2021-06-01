@@ -28,6 +28,16 @@
 // function apresentaPessoa(nome, idade, cidade, profissão) {
 //    const pessoa = "Meu nome é " + nome + " tenho " + idade + " anos e moro em " + cidade + " e sou " + profissão
 //    console.log(pessoa)
+
 // }
 // console.log(apresentaPessoa("Beyonce", 39, "Houston", "Cantora"))
 
+//2.
+//a.
+
+const verificarNumeros = (numero1, numero2) => {
+    const soma = numero1 + numero2
+    return soma
+}
+
+console.log(verificarNumeros(200, 300));
