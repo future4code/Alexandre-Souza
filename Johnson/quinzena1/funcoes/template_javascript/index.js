@@ -16,8 +16,8 @@
 
 //Exercícios de escrita de código
 //1.
-//a.
 
+//a.
 // function imprimirApresentação() {
 //     console.log("Eu sou o Alê, tenho 35 anos, moro no Paraná e sou estudante da Labenu");
 // }
@@ -33,11 +33,19 @@
 // console.log(apresentaPessoa("Beyonce", 39, "Houston", "Cantora"))
 
 //2.
-//a.
 
-const verificarNumeros = (numero1, numero2) => {
-    const soma = numero1 + numero2
-    return soma
+//a.
+// const verificarNumeros = (numero1, numero2) => {
+//     const soma = numero1 + numero2
+//     return soma
+// }
+
+// console.log(verificarNumeros(200, 300));
+
+//b.
+const verificarMaior = (numero1, numero2) => {
+    const medidor = numero1 <= numero2
+    return medidor
 }
 
-console.log(verificarNumeros(200, 300));
+console.log(verificarMaior(200, 300));
