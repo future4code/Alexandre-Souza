@@ -51,9 +51,56 @@
 // console.log(verificarMaior(200, 300));
 
 //c.
-const verificarParidade = (numeroX) => {
-    const medidor = numeroX % 2 == 0
-    return medidor
+// const verificarParidade = (numeroX) => {
+//     const medidor = numeroX % 2 == 0
+//     return medidor
+// }
+
+// console.log(verificarParidade(201));
+
+//d.
+// const conferirMensagem = (mensagem) => {
+//     const conferente = mensagem.length + "\n" + mensagem.toUpperCase()
+//     return conferente
+
+// }
+
+// console.log(conferirMensagem("Sou Estudante da Labenu"))
+
+//3.
+const num1 = Number(prompt("Insira um número"))
+const num2 = Number(prompt("Insira outro número"))
+
+const soma = (num1, num2) => {
+    return num1 + num2
+
 }
 
-console.log(verificarParidade(201));
+console.log("Soma:", soma(num1, num2))
+
+
+const subtracao = (num1, num2) => {
+    const subtracao = num1 - num2
+    return subtracao
+
+}
+
+console.log("Subtração:", subtracao(num1, num2))
+
+
+const multiplicacao = (num1, num2) => {
+    const multiplicacao = num1 * num2
+    return multiplicacao
+
+}
+
+console.log("Multiplicação:", multiplicacao(num1, num2))
+
+
+const divisao = (num1, num2) => {
+    const divisao = num1 / num2
+    return divisao
+
+}
+
+console.log("Divisão:", divisao(num1, num2))
