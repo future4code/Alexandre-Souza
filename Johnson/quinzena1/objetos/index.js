@@ -24,3 +24,26 @@
 //Vai imprimir um booleano e undefined
 //Booleano devido pedir o backender e undefined devido a pedir um objeto inexistente na função
 
+//Exercícios de escrita de código
+//1.
+//a.
+const pessoa = {
+    nome: "Alexandre",
+    apelidos: ["Ale", "Xandi", "Xandoca"]
+}
+
+console.log(`Eu sou o ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}.`)
+
+function adicionarNovosApelidos(pessoa) {
+    const novosApelidos = {
+        ...pessoa, novosApelidos: ["Picolé de Xuxu", "Alexandrinho", "Xandeco"]
+    }
+
+    return novosApelidos
+}
+
+const respostaNovosApelidos = adicionarNovosApelidos(pessoa)
+
+console.log(`Eu sou o ${respostaNovosApelidos.nome}, mas pode me chamar de: ${respostaNovosApelidos.novosApelidos[0]}, ${respostaNovosApelidos.novosApelidos[1]} ou ${respostaNovosApelidos.novosApelidos[2]}.`)
+
+
