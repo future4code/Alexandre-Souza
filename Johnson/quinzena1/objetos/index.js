@@ -19,3 +19,8 @@
 //b.
 //Ele faz uma cópia
 
+//3.
+//a.
+//Vai imprimir um booleano e undefined
+//Booleano devido pedir o backender e undefined devido a pedir um objeto inexistente na função
+
