@@ -39,7 +39,7 @@
 //         ...pessoa, novosApelidos: ["Picolé de Xuxu", "Alexandrinho", "Xandeco"]
 //     }
 
-//     return novosApelidos
+//     return
 // }
 
 // const respostaNovosApelidos = adicionarNovosApelidos(pessoa)
@@ -53,18 +53,15 @@ const pessoa = {
     profissão: "jogadora de poker"
 }
 
-console.log([pessoa.nome + pessoa.nome.length + pessoa.idade + pessoa.profissão + pessoa.profissão.length])
-
 function respostaArray(pessoa) {
-    const novaResposta = {
-        ...pessoa, novaResposta: []
-    }
-
-    return novaResposta
+    return [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissão, pessoa.profissão.length]
 
 }
 
-const respostaDaNovaResposta = respostaArray(pessoa)
+console.log(respostaArray(pessoa))
+// const respostaDaNovaResposta = respostaArray(pessoa)
 
-console.log([respostaDaNovaResposta.nome, respostaDaNovaResposta.nome.length, respostaDaNovaResposta.idade, respostaDaNovaResposta.profissão, respostaDaNovaResposta.profissão.length])
+// console.log([respostaDaNovaResposta.nome, respostaDaNovaResposta.nome.length, respostaDaNovaResposta.idade, respostaDaNovaResposta.profissão, respostaDaNovaResposta.profissão.length])
 
+//.3
+//a.
