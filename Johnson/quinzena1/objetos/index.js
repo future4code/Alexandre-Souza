@@ -27,23 +27,44 @@
 //Exercícios de escrita de código
 //1.
 //a.
+// const pessoa = {
+//     nome: "Alexandre",
+//     apelidos: ["Ale", "Xandi", "Xandoca"]
+// }
+
+// console.log(`Eu sou o ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}.`)
+
+// function adicionarNovosApelidos(pessoa) {
+//     const novosApelidos = {
+//         ...pessoa, novosApelidos: ["Picolé de Xuxu", "Alexandrinho", "Xandeco"]
+//     }
+
+//     return novosApelidos
+// }
+
+// const respostaNovosApelidos = adicionarNovosApelidos(pessoa)
+
+// console.log(`Eu sou o ${respostaNovosApelidos.nome}, mas pode me chamar de: ${respostaNovosApelidos.novosApelidos[0]}, ${respostaNovosApelidos.novosApelidos[1]} ou ${respostaNovosApelidos.novosApelidos[2]}.`)
+
+//2.
 const pessoa = {
-    nome: "Alexandre",
-    apelidos: ["Ale", "Xandi", "Xandoca"]
+    nome: "Lady Gaga",
+    idade: "35",
+    profissão: "jogadora de poker"
 }
 
-console.log(`Eu sou o ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}.`)
+console.log([pessoa.nome + pessoa.nome.length + pessoa.idade + pessoa.profissão + pessoa.profissão.length])
 
-function adicionarNovosApelidos(pessoa) {
-    const novosApelidos = {
-        ...pessoa, novosApelidos: ["Picolé de Xuxu", "Alexandrinho", "Xandeco"]
+function respostaArray(pessoa) {
+    const novaResposta = {
+        ...pessoa, novaResposta: []
     }
 
-    return novosApelidos
+    return novaResposta
+
 }
 
-const respostaNovosApelidos = adicionarNovosApelidos(pessoa)
+const respostaDaNovaResposta = respostaArray(pessoa)
 
-console.log(`Eu sou o ${respostaNovosApelidos.nome}, mas pode me chamar de: ${respostaNovosApelidos.novosApelidos[0]}, ${respostaNovosApelidos.novosApelidos[1]} ou ${respostaNovosApelidos.novosApelidos[2]}.`)
-
+console.log([respostaDaNovaResposta.nome, respostaDaNovaResposta.nome.length, respostaDaNovaResposta.idade, respostaDaNovaResposta.profissão, respostaDaNovaResposta.profissão.length])
 
