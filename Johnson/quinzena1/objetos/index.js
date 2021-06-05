@@ -47,21 +47,45 @@
 // console.log(`Eu sou o ${respostaNovosApelidos.nome}, mas pode me chamar de: ${respostaNovosApelidos.novosApelidos[0]}, ${respostaNovosApelidos.novosApelidos[1]} ou ${respostaNovosApelidos.novosApelidos[2]}.`)
 
 //2.
-const pessoa = {
-    nome: "Lady Gaga",
-    idade: "35",
-    profissão: "jogadora de poker"
-}
+// const pessoa = {
+//     nome: "Lady Gaga",
+//     idade: "35",
+//     profissão: "jogadora de poker"
+// }
 
-function respostaArray(pessoa) {
-    return [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissão, pessoa.profissão.length]
+// function respostaArray(pessoa) {
+//     return [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissão, pessoa.profissão.length]
 
-}
+// }
 
-console.log(respostaArray(pessoa))
-// const respostaDaNovaResposta = respostaArray(pessoa)
-
-// console.log([respostaDaNovaResposta.nome, respostaDaNovaResposta.nome.length, respostaDaNovaResposta.idade, respostaDaNovaResposta.profissão, respostaDaNovaResposta.profissão.length])
+// console.log(respostaArray(pessoa))
 
 //.3
-//a.
+var carrinho = []
+
+const fruta1 = {
+    nome: "caju",
+    disponibilidade: true
+}
+
+const fruta2 = {
+    nome: "morango",
+    disponibilidade: true
+}
+
+const fruta3 = {
+    nome: "uva",
+    disponibilidade: true
+}
+
+function novasFrutas(frutas) {
+    carrinho.push(frutas)
+
+}
+
+novasFrutas(fruta1)
+novasFrutas(fruta2)
+novasFrutas(fruta3)
+
+console.log(carrinho)
+
