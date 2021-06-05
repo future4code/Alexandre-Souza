@@ -61,31 +61,31 @@
 // console.log(respostaArray(pessoa))
 
 //.3
-var carrinho = []
+// var carrinho = []
 
-const fruta1 = {
-    nome: "caju",
-    disponibilidade: true
-}
+// const fruta1 = {
+//     nome: "caju",
+//     disponibilidade: true
+// }
 
-const fruta2 = {
-    nome: "morango",
-    disponibilidade: true
-}
+// const fruta2 = {
+//     nome: "morango",
+//     disponibilidade: true
+// }
 
-const fruta3 = {
-    nome: "uva",
-    disponibilidade: true
-}
+// const fruta3 = {
+//     nome: "uva",
+//     disponibilidade: true
+// }
 
-function novasFrutas(frutas) {
-    carrinho.push(frutas)
+// function novasFrutas(frutas) {
+//     carrinho.push(frutas)
 
-}
+// }
 
-novasFrutas(fruta1)
-novasFrutas(fruta2)
-novasFrutas(fruta3)
+// novasFrutas(fruta1)
+// novasFrutas(fruta2)
+// novasFrutas(fruta3)
 
-console.log(carrinho)
+// console.log(carrinho)
 
