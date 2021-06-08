@@ -21,3 +21,18 @@
 
 //c. Provavelmente terá erro pois está chamando uma variável e não está declarando nada.
 
+//Exercícios de escrita de código
+
+//1.
+const maioridade = Number(prompt("Qual a sua idade?"))
+
+function podeDirigir(maioridade) {
+    if (maioridade >= 18) {
+        return "Você pode dirigir"
+    } else {
+        return "Você não pode dirigir."
+    }
+}
+
+console.log(podeDirigir(maioridade))
+
