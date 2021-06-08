@@ -24,15 +24,30 @@
 //Exercícios de escrita de código
 
 //1.
-const maioridade = Number(prompt("Qual a sua idade?"))
+// const maioridade = Number(prompt("Qual a sua idade?"))
 
-function podeDirigir(maioridade) {
-    if (maioridade >= 18) {
-        return "Você pode dirigir"
-    } else {
-        return "Você não pode dirigir."
-    }
-}
+// function podeDirigir(maioridade) {
+//     if (maioridade >= 18) {
+//         return "Você pode dirigir"
+//     } else {
+//         return "Você não pode dirigir."
+//     }
+// }
 
-console.log(podeDirigir(maioridade))
+// console.log(podeDirigir(maioridade))
+
+//2.
+// const turnoDoAluno = prompt("Que turno você estuda: (M - Matutino), (V - Vespertino), (N - Noturno)").toUpperCase()
+
+// function mensagemAoAluno(saudacao) {
+//     if (turnoDoAluno === "M") {
+//         return "Bom dia!"
+//     } else if (turnoDoAluno === "V") {
+//         return "Boa tarde!"
+//     } if (turnoDoAluno === "N") {
+//         return "Boa noite"
+//     }
+// }
+
+// console.log(mensagemAoAluno(turnoDoAluno))
 
