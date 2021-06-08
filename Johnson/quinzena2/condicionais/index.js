@@ -12,3 +12,12 @@
 //b. Maçã será informado o valor de 2.25
 
 //c. Pêra e default serão considerados como 5
+
+//3.
+//a. Está pedindo para o usuário digitar um número.
+
+//b. Se for 10, vai imprimir: Esse número passou no teste
+// Se for -10 não vai imprimir nada pois não tem console.log
+
+//c. Provavelmente terá erro pois está chamando uma variável e não está declarando nada.
+
