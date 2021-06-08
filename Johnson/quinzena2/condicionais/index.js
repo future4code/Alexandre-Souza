@@ -69,12 +69,28 @@
 // }
 
 //4.
+// const generoDoFilme = prompt("Que gênero de filme você gosta de assistir?").toLowerCase()
+// const valorDoIngresso = prompt("Qual o valor do ingresso?")
+
+// function sessaoDeCinema (bilheteria) {
+//     if (generoDoFilme === "fantasia" && valorDoIngresso <= 15) {
+//         return "Bom filme"
+//     } else {
+//         return "Escolha outro filme :("
+//     }
+// }
+
+// console.log(sessaoDeCinema(generoDoFilme, valorDoIngresso))
+
+//DESAFIOS
+//1.
 const generoDoFilme = prompt("Que gênero de filme você gosta de assistir?").toLowerCase()
-const valorDoIngresso = prompt("Qual o valor do ingresso?")
+const valorDoIngresso = Number(prompt("Qual o valor do ingresso?"))
+const lanchinho = prompt("Qual lanchinho você vai comprar? (docinho, chocolate, ursinho de gelatina, salgadinho)")
 
 function sessaoDeCinema (bilheteria) {
     if (generoDoFilme === "fantasia" && valorDoIngresso <= 15) {
-        return "Bom filme"
+        return `Bom filme! Aproveite o seu ${lanchinho}`
     } else {
         return "Escolha outro filme :("
     }
