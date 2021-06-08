@@ -52,19 +52,33 @@
 // console.log(mensagemAoAluno(turnoDoAluno))
 
 //3.
-let mensagemAoAluno = prompt("Que turno você estuda: (Matutino), (Vespertino), (Noturno)").toLowerCase()
-switch (mensagemAoAluno) {
-    case 'matutino':
-        console.log(`Bom dia`)
-        break
-    case 'vespertino':
-        console.log('Boa tarde')
-        break
-    case 'noturno':
-        console.log('Boa noite')
-        break
-    default:
-        console.log('Digite um dos turnos')
-        break
+// let mensagemAoAluno = prompt("Que turno você estuda: (Matutino), (Vespertino), (Noturno)").toLowerCase()
+// switch (mensagemAoAluno) {
+//     case 'matutino':
+//         console.log(`Bom dia`)
+//         break
+//     case 'vespertino':
+//         console.log('Boa tarde')
+//         break
+//     case 'noturno':
+//         console.log('Boa noite')
+//         break
+//     default:
+//         console.log('Digite um dos turnos')
+//         break
+// }
+
+//4.
+const generoDoFilme = prompt("Que gênero de filme você gosta de assistir?").toLowerCase()
+const valorDoIngresso = prompt("Qual o valor do ingresso?")
+
+function sessaoDeCinema (bilheteria) {
+    if (generoDoFilme === "fantasia" && valorDoIngresso <= 15) {
+        return "Bom filme"
+    } else {
+        return "Escolha outro filme :("
+    }
 }
+
+console.log(sessaoDeCinema(generoDoFilme, valorDoIngresso))
 
