@@ -12,5 +12,9 @@
 
 //b. O for... of... não é suficiente pois ele não é capaz de acessar cada índice como o for normal.
 
+//3. 
+//Ele irá acrescentar um asterisco em cada linha e adicionar mais um a cada linha.
+
+
 
 
