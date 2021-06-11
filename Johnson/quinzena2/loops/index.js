@@ -15,6 +15,88 @@
 //3. 
 //Ele irá acrescentar um asterisco em cada linha e adicionar mais um a cada linha.
 
+//1. Exercícios de escrita de código
 
+// let petsDoUsuario = Number(prompt("Quantos pets vc tem?"))
 
+// let arrayDosPets = []
+// let novosPets = ""
 
+// if (petsDoUsuario === 0) {
+//     console.log("Que pena! Você pode adotar um pet!")
+// } else {
+//     for (let i = 0; i < petsDoUsuario; i++)
+//         novosPets = console.log(prompt("Qual o nome do seu pet?"))
+//     arrayDosPets.push(novosPets)
+// }
+// console.log(arrayDosPets)
+
+//2.
+
+//a.
+// let arrayOriginal = [1001, 2001, 3001, 4000, 5000, 6000, 7000]
+// function imprimir (arrayNumeros) {
+//     for (let i = 0; i < arrayNumeros.length; i++) {
+//         console.log(arrayNumeros[i])
+
+//     }
+// }
+// imprimir(arrayOriginal)
+
+//b.
+// function imprimir (arrayNumeros10) {
+//     for (let i = 0; i < arrayNumeros10.length; i++) {
+//         console.log(arrayNumeros10[i] / 10)
+
+//     }
+// }
+// imprimir(arrayOriginal)
+
+//c.
+// const numeros = [11, 352, 111, 238, 12369]
+
+// function pegaPares(arrayNumeros) {
+//   let soPares = []
+
+//   for (let i = 0; i < arrayNumeros.length; i++) {
+//     if (arrayNumeros[i] % 2 === 0) {
+//       soPares.push(arrayNumeros[i])
+//     }
+//   }
+
+//   return soPares
+// }
+
+// console.log(pegaPares(numeros))
+
+//d.
+// const numeros = [11, 352, 111, 238, 12369]
+
+// function pegaElemento(arrayNumeros) {
+
+//   for (let i = 0; i < arrayNumeros.length; i++) {
+//     console.log("O elemento do index " + i + " é " + arrayNumeros[i])
+//   }
+// }
+
+// pegaElemento(numeros)
+
+//e.
+// const numeros = [11, 352, 111, 238, 12369]
+
+// function pegaMaior(arrayNumeros) {
+//     let maiorNumero = 0
+
+//     for (let i = 0; i < arrayNumeros.length; i++) {
+//         if (arrayNumeros[i] > maiorNumero) {
+//             maiorNumero = arrayNumeros[i]
+//         } else {
+//             console.log("O maior número é " + maiorNumero + " e o menor é ")
+//         }
+
+//     }
+
+//     return maiorNumero
+// }
+
+// console.log(pegaMaior(numeros))
