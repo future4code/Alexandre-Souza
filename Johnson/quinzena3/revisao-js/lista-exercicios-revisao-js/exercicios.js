@@ -50,22 +50,47 @@ function retornaQuantidadeElementos(array) {
 function retornaExpressoesBooleanas() {
   const booleano1 = true
   const booleano2 = false
-  const booleano3 = !booleano2 
-  const booleano4 = !booleano3 
+  const booleano3 = !booleano2
+  const booleano4 = !booleano3
 
+  const a = booleano1 && booleano2 && !booleano4
+  const b = (booleano1 && booleano2) || !booleano3
+  const c = (booleano2 || booleano3) && (booleano4 || booleano1)
+  const d = !(booleano2 && booleano3) || !(booleano1 && booleano3)
+  const e = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+
+  const resposta = [a, b, c, d, e]
+
+  return resposta
 
 }
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
 
+  let numerosPares = []
+  let contador = 0
+
+  while (contador < n) {
+    numerosPares.push(contador * 2)
+  
+    contador++
+  }
+  
+return numerosPares
+  
 }
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+
+  if (a !== b && b !== c && c !== a) {
+    return 'Escaleno'
+  } else if (a == b && b == c && c == a) {
+    return 'Equilátero'
+  } else if (a === b && a !== c) {
+    return 'Isósceles'
+  }
 }
 
 // EXERCÍCIO 09
@@ -90,12 +115,25 @@ function ordenaArray(array) {
 
 // EXERCÍCIO 12
 function filmeFavorito() {
-
+  const dadosFilme = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+}
+return dadosFilme
 }
 
 // EXERCÍCIO 13
 function imprimeChamada() {
-  // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+  const dadosFilme = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+}
+
+return `Venha assistir ao filme ${dadosFilme.nome}, de ${dadosFilme.ano}, dirigido por ${dadosFilme.diretor} e estrelado por ${dadosFilme.atores[0]}, ${dadosFilme.atores[1]}, ${dadosFilme.atores[2]}, ${dadosFilme.atores[3]}.`// "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
 }
 
 // EXERCÍCIO 14
