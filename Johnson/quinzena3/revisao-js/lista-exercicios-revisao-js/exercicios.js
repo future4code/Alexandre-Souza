@@ -138,8 +138,18 @@ return `Venha assistir ao filme ${dadosFilme.nome}, de ${dadosFilme.ano}, dirigi
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
+  const dadosRetangulo = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: (2 * (lado1 + lado2)),
+    area: (lado1 * lado2)
+  }
+
+  return dadosRetangulo
 
 }
+
+
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
@@ -148,7 +158,15 @@ function anonimizaPessoa(pessoa) {
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
+  const pessoas = [
+    { nome: "Pedro", idade: 20 },
+    { nome: "João", idade: 10 },
+    { nome: "Paula", idade: 12 },
+    { nome: "Artur", idade: 89 }
+  ]
 
+  const maiores = pessoas.filter(maior => maior.idade >= 18);
+  return maiores
 }
 
 // EXERCÍCIO 16B
