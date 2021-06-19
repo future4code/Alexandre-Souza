@@ -103,54 +103,60 @@ function comparaDoisNumeros(num1, num2) {
 
   if (num1 > num2) {
     comparacaoDosNumeros.maiorNumero = num1
-    comparacaoDosNumeros.maiorDivisivelPorMenor = (num1 % num2 === 0)
-    comparacaoDosNumeros.diferenca = num1 >= num2
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num1 % num2 === 0
+    comparacaoDosNumeros.diferenca = num1 - num2
 
   } else if (num2 > num1) {
     comparacaoDosNumeros.maiorNumero = num2
-    comparacaoDosNumeros.maiorDivisivelPorMenor = (num2 % num1 === 0)
-    comparacaoDosNumeros.diferenca
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num2 % num1 === 0
+    comparacaoDosNumeros.diferenca = num2 - num1
+  }
+  else {
+    comparacaoDosNumeros.maiorNumero = num2
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num2 % num1 === 0
+    comparacaoDosNumeros.diferenca = 0
+
   }
 
   return comparacaoDosNumeros
 }
 
 // EXERCÍCIO 10
-// function segundoMaiorEMenor(array) {
-//   let maiorNumero = 0
-//   let segundoMaiorNumero = 0
-//   let menorNumero = 0
-//   let segundoMenorNumero = 0
+function segundoMaiorEMenor(array) {
+  let maiorNumero = 0
+  let segundoMaiorNumero = 0
+  let menorNumero = 0
+  let segundoMenorNumero = 0
 
-//   for (let i = 0; i < array.length; i++) {
-//     if (maiorNumero < array[i]) { //vai percorrer cada índice do array e ver se é maior pra jogar
-//       maiorNumero = array[i] //maiorNumero vai ser o que o array[i] percorreu e achou
-//     }
-//   }
+  for (let i = 0; i < array.length; i++) {
+    if (maiorNumero < array[i]) { //vai percorrer cada índice do array e ver se é maior pra jogar
+      maiorNumero = array[i] //maiorNumero vai ser o que o array[i] percorreu e achou
+    }
+  }
 
-//   for (let i = 0; i < array.length; i++) {
-//     if (maiorNumero !== array[i] && segundoMaiorNumero < array[i]) {
-//       segundoMaiorNumero = array[i]
-//     }
-//   }
+  for (let i = 0; i < array.length; i++) {
+    if (maiorNumero !== array[i] && segundoMaiorNumero < array[i]) {
+      segundoMaiorNumero = array[i]
+    }
+  }
 
-//   menorNumero = maiorNumero
-//   segundoMenorNumero = segundoMaiorNumero
-//   for (let i = 0; i < array.length; i++) {
-//     if (menorNumero > array[i]) {
-//       menorNumero = array[i]
-//     }
-//   }
+  menorNumero = maiorNumero
+  segundoMenorNumero = segundoMaiorNumero
+  for (let i = 0; i < array.length; i++) {
+    if (menorNumero > array[i]) {
+      menorNumero = array[i]
+    }
+  }
 
-//   for(let i = 0; i < array.length; i++) {
-//     if (menorNumero !== array[i] && segundoMaiorEMenor > array[i]) {
-//       segundoMenorNumero = array[i]
-//     } 
-//   }
+  for(let i = 0; i < array.length; i++) {
+    if (menorNumero !== array[i] && segundoMaiorEMenor > array[i]) {
+      segundoMenorNumero = array[i]
+    } 
+  }
 
-// return segundoMaiorNumero, segundoMenorNumero
+return segundoMaiorNumero, segundoMenorNumero
 
-// }
+}
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
