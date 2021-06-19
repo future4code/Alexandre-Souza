@@ -95,22 +95,72 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-  // Formato do objeto a ser retornado:
-  // {
-  //   maiorNumero: X,
-  //   maiorDivisivelPorMenor: Y,
-  //   diferenca: Z
-  // }
+  const comparacaoDosNumeros = {
+    maiorNumero: 0,
+    maiorDivisivelPorMenor: false,
+    diferenca: 0
+  }
+
+  if (num1 > num2) {
+    comparacaoDosNumeros.maiorNumero = num1
+    comparacaoDosNumeros.maiorDivisivelPorMenor = (num1 % num2 === 0)
+    comparacaoDosNumeros.diferenca = num1 >= num2
+
+  } else if (num2 > num1) {
+    comparacaoDosNumeros.maiorNumero = num2
+    comparacaoDosNumeros.maiorDivisivelPorMenor = (num2 % num1 === 0)
+    comparacaoDosNumeros.diferenca
+  }
+
+  return comparacaoDosNumeros
 }
 
 // EXERCÍCIO 10
-function segundoMaiorEMenor(array) {
+// function segundoMaiorEMenor(array) {
+//   let maiorNumero = 0
+//   let segundoMaiorNumero = 0
+//   let menorNumero = 0
+//   let segundoMenorNumero = 0
 
-}
+//   for (let i = 0; i < array.length; i++) {
+//     if (maiorNumero < array[i]) { //vai percorrer cada índice do array e ver se é maior pra jogar
+//       maiorNumero = array[i] //maiorNumero vai ser o que o array[i] percorreu e achou
+//     }
+//   }
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (maiorNumero !== array[i] && segundoMaiorNumero < array[i]) {
+//       segundoMaiorNumero = array[i]
+//     }
+//   }
+
+//   menorNumero = maiorNumero
+//   segundoMenorNumero = segundoMaiorNumero
+//   for (let i = 0; i < array.length; i++) {
+//     if (menorNumero > array[i]) {
+//       menorNumero = array[i]
+//     }
+//   }
+
+//   for(let i = 0; i < array.length; i++) {
+//     if (menorNumero !== array[i] && segundoMaiorEMenor > array[i]) {
+//       segundoMenorNumero = array[i]
+//     } 
+//   }
+
+// return segundoMaiorNumero, segundoMenorNumero
+
+// }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
+  array.sort(function compare(a, b) {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  })
 
+  return array
 }
 
 // EXERCÍCIO 12
@@ -121,6 +171,7 @@ function filmeFavorito() {
     diretor: 'David Frankel',
     atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
 }
+
 return dadosFilme
 }
 
@@ -149,45 +200,68 @@ function criaRetangulo(lado1, lado2) {
 
 }
 
-
-
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
+  const dados = {
+    nome: "Carlos",
+    idade: 26,
+    email: "carlos@labenu.com.br",
+    endereco: "Rua do Futuro, 4"
+  }
+  const novosDados = {
+    ...pessoa,
+    nome: "ANÔNIMO"
+  }
 
+  return novosDados
 }
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-  const pessoas = [
-    { nome: "Pedro", idade: 20 },
-    { nome: "João", idade: 10 },
-    { nome: "Paula", idade: 12 },
-    { nome: "Artur", idade: 89 }
-  ]
-
-  const maiores = pessoas.filter(maior => maior.idade >= 18);
-  return maiores
+  const maioresDeIdade = arrayDePessoas.filter(array => {
+    return array.idade > 17
+  })
+  return maioresDeIdade
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
-
+  const menorDeIdade = arrayDePessoas.filter(array => {
+    return array.idade < 18
+  })
+  return menorDeIdade
 }
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
 
+  const multiplicaPorDois = array.map(dobro => dobro * 2)
+  return multiplicaPorDois
 }
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
-
+  let novoArray = []
+  array.map((numero) => {
+    let numeroString = numero * 2
+    novoArray.push(numeroString.toString())
+  })
+  return novoArray
 }
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
+  let novoArray = []
+  array.map((numero) => {
+      if (numero % 2 === 0) {
+          novoArray.push(`${numero} é par`)
+      } else {
+          novoArray.push(`${numero} é ímpar`)
+      }
+  })
+  return novoArray
 }
+
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
