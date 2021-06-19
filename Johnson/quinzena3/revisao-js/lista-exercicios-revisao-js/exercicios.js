@@ -124,37 +124,35 @@ function comparaDoisNumeros(num1, num2) {
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
   let maiorNumero = 0
-  let segundoMaiorNumero = 0
+  let segundoMaior = 0
   let menorNumero = 0
-  let segundoMenorNumero = 0
-
-  for (let i = 0; i < array.length; i++) {
-    if (maiorNumero < array[i]) { //vai percorrer cada índice do array e ver se é maior pra jogar
-      maiorNumero = array[i] //maiorNumero vai ser o que o array[i] percorreu e achou
-    }
-  }
-
-  for (let i = 0; i < array.length; i++) {
-    if (maiorNumero !== array[i] && segundoMaiorNumero < array[i]) {
-      segundoMaiorNumero = array[i]
-    }
-  }
-
-  menorNumero = maiorNumero
-  segundoMenorNumero = segundoMaiorNumero
-  for (let i = 0; i < array.length; i++) {
-    if (menorNumero > array[i]) {
-      menorNumero = array[i]
-    }
-  }
-
+  let segundoMenor = 0
+  
   for(let i = 0; i < array.length; i++) {
-    if (menorNumero !== array[i] && segundoMaiorEMenor > array[i]) {
-      segundoMenorNumero = array[i]
-    } 
+      if(maiorNumero < array[i]) {
+          maiorNumero = array[i]  
+      }
   }
-
-return segundoMaiorNumero, segundoMenorNumero
+  
+  for(let i = 0; i < array.length; i++) {     
+      if(maiorNumero !== array[i] && segundoMaior < array[i]) {
+          segundoMaior = array[i]
+      }
+  }
+  
+  menorNumero = maiorNumero
+  segundoMenor = segundoMaior
+  for(let i = 0; i < array.length; i++) {
+      if (menorNumero > array[i]) {
+          menorNumero = array[i]
+      }
+  }
+  
+  for(let i = 0; i < array.length; i++) { 
+      if(menorNumero !== array[i] && segundoMenor > array[i]) {
+          segundoMenor = array[i]
+      }
+  }
 
 }
 
@@ -270,17 +268,39 @@ function verificaParidade(array) {
 
 
 // EXERCÍCIO 18A
+const pessoas = [
+  { nome: "Paula", idade: 12, altura: 1.8 },
+  { nome: "João", idade: 20, altura: 1.3 },
+  { nome: "Pedro", idade: 15, altura: 1.9 },
+  { nome: "Luciano", idade: 22, altura: 1.8 },
+  { nome: "Artur", idade: 10, altura: 1.2 },
+  { nome: "Soter", idade: 70, altura: 1.9 }
+]
+
 function retornaPessoasAutorizadas(pessoas) {
+  const pessoasQuePodemEntrar = pessoas.filter(p => p.altura >= 1.5 && p.idade > 14 && p.idade < 60)
+    return pessoasQuePodemEntrar
 
 }
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
+  const pessoasBarradas = pessoas.filter(p => p.altura <= 1.5 || p.idade < 14 || p.idade > 60)
+    return pessoasBarradas
 
 }
 
 // EXERCÍCIO 19A
+const consultas = [
+  { nome: "João", dataDaConsulta: "01/10/2021" },
+  { nome: "Pedro", dataDaConsulta: "02/07/2021" },
+  { nome: "Paula", dataDaConsulta: "03/11/2021" },
+  { nome: "Márcia",  dataDaConsulta: "04/05/2021" }
+]
+
 function ordenaPorNome(consultasNome) {
+  return consultas.sort()
+
 
 }
 
@@ -290,6 +310,22 @@ function ordenaPorData(consultasData) {
 }
 
 // EXERCÍCIO 20
+const contas = [
+  { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+  { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+  { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+  { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+  { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+  { cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
 function calculaSaldo(contas) {
+  contas.map((contas) => {
+    let comprasTotal = 0;
+    for (let i = 0; i < contas.compras.length; i++) {
+      comprasTotal += contas.compras[i]
+    }
+    contas.saldoTotal -= comprasTotal
+  })
 
 }
