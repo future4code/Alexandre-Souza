@@ -280,15 +280,52 @@ const consultas = [
 ]
 
 function ordenaPorNome(consultasNome) {
-  return consultasNome.sort((a, b) => {
-    if (a.nome < b.nome) return -1
-    return 0
-})
+  let checarTrue = false;
+  while (!checarTrue) {
+    checarTrue = true;
+    for (let i = 0; i < consultasNome.length - 1; i++) {
+      let nomeSeguinte = consultasNome[i + 1].nome
+      let comparaInicial = (consultasNome[i].nome).localeCompare(nomeSeguinte)
+      if (comparaInicial === 1) {
+        checarTrue = false;
+        let tmp = consultasNome[i + 1];
+        consultasNome[i + 1] = consultasNome[i];
+        consultasNome[i] = tmp;
+      }
+    }
+  }
+  return consultasNome;
 
 }
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
+  function transformaData(dataParametro) {
+    const quebraPalavra = dataParametro.split(`/`)
+    let dia = quebraPalavra[0]
+    let mes = quebraPalavra[1]
+    let ano = quebraPalavra[2]
+    let resultado = [ano, mes, dia]
+    return resultado
+  }
 
+
+  console.log(`PRIMEIRO PROGRAMA`)
+
+  let checarTrue = false;
+  while (!checarTrue) {
+    checarTrue = true;
+    for (let i = 0; i < consultasData.length - 1; i++) {
+      let dataAntes = new Date(transformaData(consultasData[i].dataDaConsulta))
+      let dataSeguinte = new Date(transformaData(consultasData[i + 1].dataDaConsulta))
+      if (dataSeguinte < dataAntes) {
+        checarTrue = false;
+        let tmp = consultasData[i + 1];
+        consultasData[i + 1] = consultasData[i];
+        consultasData[i] = tmp;
+      }
+    }
+  }
+  return consultasData;
 }
 
 // EXERCÍCIO 20
@@ -302,10 +339,14 @@ const contas = [
 ]
 
 function calculaSaldo(contas) {
-  return contas.map(conta => {
-    return {
-        cliente: conta.cliente,
-        saldoTotal: conta.saldoTotal - conta.compras.reduce((acumulador, atual) => acumulador += atual, 0),
-        compras: conta.compras
+  for (let i=0; i<contas.length; i++){
+    let soma
+    soma = 0
+    for (creditos of contas[i].compras){
+      soma += Number(creditos)
     }
-})
+    contas[i].saldoTotal = contas[i].saldoTotal - soma
+    console.log (contas[i].saldoTotal)
+  }
+  return contas
+}
