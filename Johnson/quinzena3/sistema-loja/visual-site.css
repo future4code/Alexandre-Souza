@@ -88,16 +88,27 @@ a {
   line-height: 350px;
 }
 
+#img-dog {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 h2 {
   color: rgb(248, 15, 46);;
   font-size: 30px;
   }
 
   #centralfuncionarios {
-    background-color: white;
-    height: 350px;
-    text-align: center;
-    line-height: 350px;
+    color: rgb(248, 15, 46);
+    font-size: 24px;
+    text-align: left;
+    line-height: 60px;
+    display: block;
+    font-size: 20px;
+    margin: 16px;
   }
 
   ul {
@@ -114,18 +125,19 @@ h2 {
 
   #controle-de-estoque {
     color: rgb(248, 15, 46);
-    font-size: 24px;
+    font-size: 40px;
     text-align: left;
     line-height: 60px;
-    display: block;
-    font-size: 20px;
-    margin: 16px;
+    display: inline-block;
+    font-size: 80px;
+    margin: 160px;
   }
 
   #produtos-controle {
     color: rgb(248, 15, 46);
     font-size: 18px;
     margin: 16px;
+    display: block;
     
   }
 
@@ -148,6 +160,20 @@ h2 {
   }
 
   #central-add-produto {
-    
+    color: rgb(248, 15, 46);
+    font-size: 24px;
+    text-align: left;
+    line-height: 60px;
+    display: block;
+    font-size: 20px;
+    margin: 16px;
 
+  }
+
+  #head-funcionarios {
+    color: rgb(248, 15, 46);;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    padding: 44px;
   }
