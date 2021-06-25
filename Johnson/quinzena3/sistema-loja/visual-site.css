@@ -5,6 +5,7 @@
 
 body {
   background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -39,7 +40,7 @@ a {
   /* vertical-align: middle; */
   /* width: 400px; */
   /* height: 40px; */
-  font-size: 18px;
+  font-size: 24px;
 }
 
 /* img {
@@ -62,6 +63,7 @@ a {
   text-align: center;
   line-height: 35px;
   padding-top: 25px;
+  font-size: 24%;
 }
 
 #rodape {
@@ -71,6 +73,9 @@ a {
   padding: 15px;
   line-height: 75px;
   margin-bottom: -10px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
 }
 
 #rodape img {
@@ -89,7 +94,7 @@ a {
 }
 
 #img-dog {
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -177,3 +182,30 @@ h2 {
     line-height: 60px;
     padding: 44px;
   }
+
+#dog-funcionario {
+    position: absolute;
+    left: 700px;
+    top: 250px;
+    
+}
+
+#dog-add {
+    position: absolute;
+    left: 850px;
+    top: 190px;
+
+}
+
+.form-add {
+    background-color: yellow
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
