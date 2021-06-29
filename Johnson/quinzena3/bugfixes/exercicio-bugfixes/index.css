@@ -35,6 +35,7 @@ div>p:first-child {
 
 div img {
     background:white;
+    width: 90px;
 }
 
 .botao-amarelo {
