@@ -11,4 +11,4 @@ function criarArrayNomesAnimais() {
   const nomesAnimais = animais.map(nomes => nomes.nome)
      return nomesAnimais
 
-````
+```
