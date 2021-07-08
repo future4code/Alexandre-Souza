@@ -72,3 +72,29 @@ button {
     justify-content: center;
     bottom: 0;
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* celulares */
+#principal{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+}
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+/* tablets */
+#principal{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 20px;
+    padding: 20px;
+}
+}
+@media screen and (min-device-width : 1200px) {
+/* computadores */
+}
