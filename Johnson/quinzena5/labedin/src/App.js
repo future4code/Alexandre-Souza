@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import ProfileImage from './components/img/321.PNG'
+
 
 function App() {
   return (
@@ -9,9 +11,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
+          imagem={ProfileImage}
           nome="Astrodev" 
-          descricao="Oi, eu sou o Astrodev. Sou o chefe dos alunos da Labenu. Adoro pedir e-mails na sexta-feira e esperar os alunos responderem só para responder com uma bronca e dar mais trabalho para eles."
+          descricao="Oi, eu sou o Alexandre, estudante e fã da Labenu, amo artes e tecnlogia, quero muito conciliar os dois."
         />
         
         <ImagemButton 
