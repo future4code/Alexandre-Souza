@@ -20,25 +20,54 @@ const InputsContainer = styled.div`
 
 class App extends React.Component {
     state = {
-      tarefas: [],
+      tarefas: [
+        {
+          id: Date.now(),
+          text: 'Estudar React.js',
+          completa: false
+        },
+        {
+          id: Date.now(),
+          text: 'Orar pra Jesus',
+          completa: true
+        }
+      ],
       inputValue: '',
       filtro: ''
     }
 
   componentDidUpdate() {
-
+    localStorage.setItem('tarefa', JSON.stringify(this.state.tarefas))
   };
 
   componentDidMount() {
-
+    const item = localStorage.getItem("Tarefas")
+    const mount = JSON.parse(item)
+    console.log(mount)
+    if(mount){
+      this.setState({tarefas: mount})
+    }
   };
 
   onChangeInput = (event) => {
+    this.setState({inputValue: event.target.value})
 
-  }
+}
 
   criaTarefa = () => {
+    console.log("Criar tarefa", this.state.inputValue)
+    const novaTarefa = {
+      id: Date.now(),
+      text: this.state.inputValue,
+      completa: false
+    };
 
+    const copiaDoEstado = [...this.state.tarefas];
+    copiaDoEstado.push(novaTarefa)
+
+    this.setState({
+      tarefas: copiaDoEstado
+    });
   }
 
   selectTarefa = (id) => {
@@ -85,7 +114,7 @@ class App extends React.Component {
                 completa={tarefa.completa}
                 onClick={() => this.selectTarefa(tarefa.id)}
               >
-                {tarefa.texto}
+                {tarefa.text}
               </Tarefa>
             )
           })}
