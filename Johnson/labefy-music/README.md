@@ -1,70 +1,70 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  🎵 Labefy
 
-## Available Scripts
+![image](https://user-images.githubusercontent.com/71138743/130374856-62e442a3-19a4-4852-ace2-a0f0a5a504b1.png)
+![image](https://user-images.githubusercontent.com/71138743/130374901-fffbc171-71ca-4750-a384-17a8c16beaf6.png)
+![image](https://user-images.githubusercontent.com/71138743/130374915-152c5833-8dd8-4ba3-b150-27241b67ac59.png)
+![image](https://user-images.githubusercontent.com/71138743/130374948-2e46e2e8-7237-48bf-a982-b712b4a395cc.png)
 
-In the project directory, you can run:
+---
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Índice
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Descrição](#-descrição-do-projeto)
+- [Como acessar o projeto](#-como-acessar-o-projeto)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖋 Descrição do projeto
 
-### `npm run build`
+A ideia central deste projeto é realizar uma integração com a API **Labefy**, que permite o gerenciamento básico de playlists de músicas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   O usuário deve ser capaz de criar uma playlist de músicas. Para isso, ele só precisa passar um nome. Não podem existir playlists com o mesmo nome.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Deve haver a possibilidade do usuário visualizar todas as suas playlists, em uma lista específica. Nesta lista, o usuário também pode deletar alguma playlist.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   O usuário deve ser capaz de visualizar os detalhes de uma playlist: o seu nome e as músicas que fazem parte dela.
 
-### `npm run eject`
+-   Para adicionar músicas à playlist, o usuário deve informar: o nome, os artistas relacionados (que pode ser só um cantor ou uma banda) e um link com o arquivo de áudio correspondente a esta música.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Por fim, quando o usuário abrir o detalhe da playlist, ele deve ser capaz de ouvir a cada uma das músicas que estiverem inseridas na playlist. Um botão de 'play' e 'pause' é essencial para isto.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🌎 Como acessar o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Link do surge](https://ale-music-labefy.surge.sh/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Tecnologias utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+O projeto foi desenvolvido usando as seguintes tecnologias:
 
-### Code Splitting
+- [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Styled-Components](https://styled-components.com/docs)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Sweetalert](https://sweetalert.js.org/docs/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💾 Como baixar o projeto
 
-### Analyzing the Bundle Size
+Primeiro instale o [Git](https://git-scm.com/), [Node.jS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm)
+```bash
+# Clonar o repositório
+git clone hhttps://github.com/Ale557333/Labefy.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Entrar no diretório
+cd labefy
 
-### Making a Progressive Web App
+# Instalar as dependências
+npm install
+npm install styled-components
+npm install axios
+npm install sweetalert
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Rodar o projeto
+npm run start
+```
+Desenvolvido com 💙 por Alexandre.
