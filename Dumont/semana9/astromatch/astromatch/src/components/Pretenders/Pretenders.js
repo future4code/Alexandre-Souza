@@ -42,7 +42,7 @@ function Pretenders (){
     const putMatches = ()=>{
         axios.put(urlThree)
         .then(()=>{
-            alert('Matches limpos com sucesso !')
+            alert('Matches limpos com sucesso!')
         })
         .catch(()=>{
             alert('Erro ao limpar os macthes')
@@ -76,7 +76,7 @@ function Pretenders (){
                     <ImgProfile src={profiles.photo} alt='foto'/>                                
                 </AlignImgBio>
                 <DivContentProfile>
-                    <h2>{profiles.name} , </h2>    
+                    <h2>{profiles.name}</h2>    
                     <h2>{profiles.age}</h2>                                                  
                 </DivContentProfile>
                 <BioProfile>{profiles.bio}</BioProfile>  
