@@ -4,8 +4,8 @@ import {DivContainer,DivListMatches,DivHeightMatches,DivRefreshMatches} from './
 import {ImgMatches,IconMatchProfile} from './Styled'
 import iconRefresh from '../../assets/icon-refresh.png'
 
-const urlOne = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/matches'
-const urlTwo = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/clear'
+const urlOne = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/matches'
+const urlTwo = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/clear'
 function Matches (){
 
     const [listMatches,setListMatches] = useState([])

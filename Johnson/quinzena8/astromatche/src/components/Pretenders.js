@@ -1,8 +1,8 @@
 import React, { useEffect, useState} from 'react'
 import axios from 'axios'
 
-const urlGet = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/person'
-const urlPost = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/choose-person'
+const urlGet = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/person'
+const urlPost = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/choose-person'
 
 function Pretenders (props){
     const [profiles, setProfiles]=useState({})

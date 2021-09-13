@@ -6,9 +6,9 @@ import iconLike from '../../assets/icon-like.png'
 import iconDislike from '../../assets/icon-dislike.png'
 import iconRefresh from '../../assets/icon-refresh.png'
 
-const urlOne = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/person'
-const urlTwo = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/choose-person'
-const urlThree = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:alexandre/clear'
+const urlOne = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/person'
+const urlTwo = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-oliveira/choose-person'
+const urlThree = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alexandre-olieira/clear'
 
 function Pretenders (){
     const [profiles,setProfiles]=useState({})
