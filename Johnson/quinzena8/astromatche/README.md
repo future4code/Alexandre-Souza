@@ -23,7 +23,7 @@ O projeto **Astromatch** foi desenvolvido durante o **Bootcamp da Labenu**, com 
 
 ## 🌎 Como acessar o projeto
 
-- [Link do surge](https://astromatch-astroale.surge.sh/)
+- [Link do surge](astro-print-ale.surge.sh)
 
 ## 🚀 Tecnologias utilizadas
 
